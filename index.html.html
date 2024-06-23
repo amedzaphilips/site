@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AirBnB clone</title>
+	<style>
+		/* COMMON */
+		body{
+			padding:0;
+			margin:0;
+			font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 14px;
+			color: #484848
+		}
+		
+		
+		.container{
+				background-color: #f0f0f0;
+				max-width: 1000px;
+    				margin-top: 30px;
+    				margin-bottom:30px;
+    				margin-left: auto;
+    				margin-right: auto;
+				
+		}
+
+
+		/* FILTERS */
+		.container .filters{
+					height: 70px;
+					background-color: white;
+					width: 100%;
+					border: 1px solid #DDDDDD;
+					border-radius: 4px;
+					position: relative;
+					display: flex;
+		}
+
+		.container .filters button{
+						font-size: 18px;
+						background-color: #FF5A5F;
+						color: #FFFFFF;
+						height: 48px;
+						width: 20%;
+						border: none;
+						border-radius: 4px;
+						position: absolute;
+						right: 30px;
+						top: 16%
+						
+		}
+
+		.container .filters button:hover{
+				opacity: 90%;
+		}
+
+		
+		.container .filters .locations{
+						height: 100%;
+						width: 25%;
+						border-right: 1px solid #DDDDDD;
+						
+		}
+
+		.container .filters .locations h3{
+						font-weight: 600;
+						padding-left: 10%;
+		}
+
+		.container .filters .locations h4{
+						font-weight: 400;
+						font-size: 14px;
+						padding-left: 10%;
+						position: relative;
+						bottom: 17px;
+		}
+
+
+
+		.container .filters .amenities{
+						height: 100%;
+						width: 25%;
+					
+		}
+
+
+		.container .filters .amenities h3{
+						font-weight: 600;
+						padding-left: 10%;
+		}
+
+		.container .filters .amenities h4{
+						font-weight: 400;
+						font-size: 14px;
+						padding-left: 10%;
+						position: relative;
+						bottom: 17px;				
+		}
+
+		.popover{
+				background-color: #FAFAFA;
+				border: 1px solid #DDDDDD;
+				border-radius: 4px;
+				position: relative;
+				bottom: 17.5px;
+				display: none
+		}
+
+		div:hover > .popover {
+    					display: block;
+    					cursor: pointer;
+		}
+
+		.locations h2{
+				font-size: 16px;
+		}
+
+		/* HEADER */
+		header{
+			background-color: white; 
+			height: 70px; 
+			width: 100%;
+			border-bottom: 1px solid #CCCCCC;
+			
+		}
+		
+
+		.logo{
+			display: inline-block; 
+			vertical-align: middle; 
+			margin-left: 20px;
+		}
+
+		
+		/* FOOTER */
+		footer{
+			background-color: white; 
+			height: 60px; 
+			width: 100%; 
+			bottom: 0; 
+			border-top: 1px solid #CCCCCC;
+			position: fixed; 
+			display: flex; 
+			justify-content: center; 
+			align-items: center;
+		}
+	
+	</style>
+	<link rel="icon" href="icon.png">
+	</head>
+	
+	<body>
+        	<header>
+			<div class="logo">
+				<img src="logo.png" alt="Airbnb logo">
+			</div>
+        	</header>
+
+		<div class="container">
+			<section class="filters">
+				<button>
+					Search
+				</button>
+
+				<div class="locations">
+					<h3>States</h3>
+					<h4>Accra, Tema ...</h4>
+					<ul class="popover">
+						<li><h2>Accra</h2>
+							<ul>
+								<li>Osu</li>
+								<li>Dc</li>
+							</ul>
+						</li>
+						<li><h2>Tema</h2>
+							<ul>
+								<li>C6</li>
+								<li>Manhean</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="amenities">
+					<h3>Amenities</h3>
+					<h4>Tennis court, Pool ...</h4>
+					<ul class="popover">
+						<li>Kitchen</li>
+						<li>Wifi</li>
+						<li>Pool</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="places">
+				<h1>Places</h1>
+				<article><h2>Nice House</h2></article>
+				<article><h2>Tilly House</h2></article>
+				<article><h2>Mud House</h2></article>
+			</section>
+
+		</div>
+
+        	<footer>
+            		Best School
+        	</footer>
+	</body>
+</html>
